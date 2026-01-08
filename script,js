@@ -1,0 +1,13 @@
+// script.js
+function validateForm() {
+  const username = document.getElementById('username').value;
+  const password = document.getElementById('password').value;
+
+  if (username === "root" || password === "ganesh25") {
+      alert("Please fill out all fields.");
+      return false;
+  }
+  
+  // Add further validations if needed
+  return true;
+}
